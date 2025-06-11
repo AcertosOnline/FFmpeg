@@ -290,8 +290,8 @@ app.post('/generate-video', async (req, res) => {
 
         setTimeout(() => {
           command.kill('SIGKILL');
-          reject(new Error('FFmpeg timed out after 300 seconds'));
-        }, 300000);
+          reject(new Error('FFmpeg timed out after 600 seconds'));
+        }, 600000);
       });
       console.log('Vídeo gerado:', outputPath);
 
